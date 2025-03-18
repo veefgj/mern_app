@@ -3,6 +3,7 @@ import { Col } from 'antd';
 import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
 import Search from 'antd/es/transfer/search';
 import { CaretDownOutlined, UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 const HeaderComponent = () => {
     return (
         <div>
@@ -12,14 +13,13 @@ const HeaderComponent = () => {
                     <WrapperTextHeader>MERN</WrapperTextHeader>
                 </Col>
                 <Col span={12}>
-                    <Search
-                        placeholder="input search text"
-                        // allowClear
-                        enterButton="Search"
-                    // onSearch={onSearch}
+                    <ButtonInputSearch
+                    size = "large"
+                    textButton = "Tìm kiếm"
+                    placeholder="input search text"
                     />
                 </Col>
-                <Col span={6} style={{ display: 'flex', gap: '20px'}}>
+                <Col span={6} style={{ display: 'flex', gap: '20px', alignItems: 'center'}}>
                     <WrapperHeaderAccount>
                         <UserOutlined style={{ fontSize: '25px' }} />
 
@@ -32,7 +32,7 @@ const HeaderComponent = () => {
                         </div>
                     </WrapperHeaderAccount>
                     <div>
-                        <ShoppingCartOutlined style={{ fontSize: '30px', color: '#fff' }} />
+                        <ShoppingCartOutlined style={{ fontSize: '30px', color: '#fff', paddingLeft: '20px' }} />
                         <WrapperTextHeaderSmall>Giỏ hàng</WrapperTextHeaderSmall>
 
                     </div>
