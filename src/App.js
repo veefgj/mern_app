@@ -2,7 +2,8 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { routes } from './routes'
 import DefaulComponent from './components/DefaulComponent/DefaulComponent'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <div>
