@@ -10,15 +10,20 @@ import slider3 from '../../assets/images/slider3.webp'
 const HomePage = () => {
   const arr = ['TV', 'Tu lanh', 'Laptop']
   return (
-    <div style={{ padding: '0 120px' }}>
-      <WrapperTypeProduct>
-        {arr.map((item) => (
-          <TypeProduct name={item} key={item} />
-        ))}
-      </WrapperTypeProduct>
-      <SliderComponent arrImages = {[slider1, slider2, slider3 ]}/>
-      HomePage
-    </div>
+    <>
+      <div style={{ padding: '0 120px' }}>
+        <WrapperTypeProduct>
+          {arr.map((item) => (
+            <TypeProduct name={item} key={item} />
+          ))}
+        </WrapperTypeProduct>
+
+      </div>
+      <div id="container" style={{backgroundColor: '#efefef', padding: '0 120px'}}>
+
+        <SliderComponent arrImages={[slider1, slider2, slider3]} />
+      </div>
+    </>
   )
 }
 
