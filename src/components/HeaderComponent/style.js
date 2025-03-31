@@ -1,17 +1,21 @@
 import styled from "styled-components";
 import {Row} from 'antd'
 export const WrapperHeader = styled(Row)`
-        padding: 10px 120px;
-        background-color: rgb(128, 53, 253);
+        background-color: rgb(26, 148, 255);
         align-items: center;
-        gap: 16px;
+        gap: 14px;
         flex-wrap: nowrap;
+        width: 1300px;
+        height: 70px;
+        padding: 10px 0;
+
 `
 export const WrapperTextHeader = styled.span`
         font-size: 30px;
         color: #fff;
         font-weight: bold;
-        text-align: left
+        text-align: left;
+        padding-left: 90px;
 `
 export const WrapperHeaderAccount = styled.div`
         display: flex;
